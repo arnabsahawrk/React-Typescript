@@ -1,21 +1,23 @@
 import "./App.css";
+import Button from "./components/Button";
+// import DataFetch from "./components/DataFetch";
 // import User from "./components/User";
-import UserDemo from "./components/UserDemo";
+// import UserDemo from "./components/UserDemo";
 
-const User = [
-  {
-    id: 1,
-    name: "Arnab Saha",
-    email: "arnabsaha@gmail.com",
-    age: 25,
-  },
-  {
-    id: 2,
-    name: "Riya Saha",
-    email: "riyasaha@gmail.com",
-    age: 24,
-  },
-];
+// const User = [
+//   {
+//     id: 1,
+//     name: "Arnab Saha",
+//     email: "arnabsaha@gmail.com",
+//     age: 25,
+//   },
+//   {
+//     id: 2,
+//     name: "Riya Saha",
+//     email: "riyasaha@gmail.com",
+//     age: 24,
+//   },
+// ];
 
 function App() {
   return (
@@ -27,7 +29,9 @@ function App() {
         isRegistered={true}
         lang={["English", "Bangla", "Hindi"]}
       /> */}
-      <UserDemo users={User} />
+      {/* <UserDemo users={User} /> */}
+      {/* <DataFetch status="loading" /> */}
+      <Button>Click Me</Button>
     </div>
   );
 }
