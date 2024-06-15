@@ -1,6 +1,7 @@
-import { useState } from "react";
+// import { useState } from "react";
 import "./App.css";
-import ButtonStyle from "./components/ButtonStyle";
+import NewUser from "./components/NewUser";
+// import ButtonStyle from "./components/ButtonStyle";
 // import Button from "./components/Button";
 // import DataFetch from "./components/DataFetch";
 // import User from "./components/User";
@@ -28,7 +29,7 @@ export type User = {
 
 function App() {
   // const [user, setUser] = useState<null | User>(null);
-  const [user, setUser] = useState<User>({} as User);
+  // const [user, setUser] = useState<User>({} as User);
 
   return (
     <div className="App">
@@ -42,7 +43,7 @@ function App() {
       {/* <UserDemo users={User} /> */}
       {/* <DataFetch status="loading" /> */}
       {/* <Button>Click Me</Button> */}
-      <ButtonStyle
+      {/* <ButtonStyle
         btnStyle={{
           color: "red",
           background: "white",
@@ -50,7 +51,8 @@ function App() {
         }}
         setUser={setUser}
       />
-      <p>{user.name}</p>
+      <p>{user.name}</p> */}
+      <NewUser />
     </div>
   );
 }
